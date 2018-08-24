@@ -5,10 +5,10 @@ import view.*;
 
 
 abstract class Person {
-   protected String fullName;
-   protected String email;
-   protected String cpf;
-   protected String phone;
+   private String fullName;
+   private String email;
+   private String cpf;
+   private String phone;
 
     Person(){
         Input newInput = new Input();

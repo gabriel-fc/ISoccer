@@ -26,10 +26,10 @@ public class Doctor extends Employee{
         MembersDefaultMessages newOutput = new MembersDefaultMessages();
         ToStringFunctions stringFunction = new ToStringFunctions();
 
-        return newOutput.fullNameMessage() + super.fullName + "\n"
-                + newOutput.cpfMessage() + super.cpf + "\n"
-                + newOutput.emailMessage() + super.email + "\n"
-                + newOutput.phoneMessage() + super.phone + "\n"
+        return newOutput.fullNameMessage() + super.getFullName() + "\n"
+                + newOutput.cpfMessage() + super.getCpf() + "\n"
+                + newOutput.emailMessage() + super.getEmail() + "\n"
+                + newOutput.phoneMessage() + super.getPhone() + "\n"
                 + newOutput.functionMessage() + stringFunction.
                 toStringEmployeeFunction(super.employeeFunction)+ "\n"
                 + newOutput.salaryMessage() + super.salary+ "\n"

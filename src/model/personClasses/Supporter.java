@@ -41,10 +41,10 @@ public class Supporter extends Person {
         MembersDefaultMessages newOutput = new MembersDefaultMessages();
         ToStringFunctions stringFunction = new ToStringFunctions();
 
-        return newOutput.fullNameMessage() + super.fullName
-                + newOutput.cpfMessage() + super.cpf
-                + newOutput.emailMessage() + super.email
-                + newOutput.phoneMessage() + super.phone
+        return newOutput.fullNameMessage() + super.getFullName()
+                + newOutput.cpfMessage() + super.getCpf()
+                + newOutput.emailMessage() + super.getEmail()
+                + newOutput.phoneMessage() + super.getPhone()
                 + newOutput.supporterCategoryMessage() + stringFunction.toStringSupporterCategory(this.category) + "\n"
                 + newOutput.supporterComplianceMessage() + stringFunction.toStringSupporterCompliance(this.compliance);
 
