@@ -36,10 +36,10 @@ public class Employee extends Person {
         MembersDefaultMessages newOutput = new MembersDefaultMessages();
         ToStringFunctions stringFunction = new ToStringFunctions();
 
-        return newOutput.fullNameMessage() + super.fullName
-                + newOutput.cpfMessage() + super.cpf + "\n"
-                + newOutput.emailMessage() + super.email + "\n"
-                + newOutput.phoneMessage() + super.phone + "\n"
+        return newOutput.fullNameMessage() + super.getFullName()
+                + newOutput.cpfMessage() + super.getCpf() + "\n"
+                + newOutput.emailMessage() + super.getEmail() + "\n"
+                + newOutput.phoneMessage() + super.getPhone()+ "\n"
                 + newOutput.functionMessage() + stringFunction.
                 toStringEmployeeFunction(this.employeeFunction) + "\n"
                 + newOutput.salaryMessage() + this.salary + "\n";
